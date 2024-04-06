@@ -16,3 +16,7 @@ Content-Type: application/json
   "name" : "Paulo Alves",
   "email" : "ph22223.alves@gmail.com"
 }
+
+###
+
+GET http://localhost:3333/events/d6347339-a70d-4917-8bca-6806e84ac637

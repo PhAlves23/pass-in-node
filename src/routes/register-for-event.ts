@@ -1,4 +1,4 @@
-import { ZodTypeProvider } from "./../../node_modules/fastify-type-provider-zod/src/index";
+import { ZodTypeProvider } from "fastify-type-provider-zod";
 import { FastifyInstance } from "fastify";
 import { z } from "zod";
 import { prisma } from "../lib/prisma";
