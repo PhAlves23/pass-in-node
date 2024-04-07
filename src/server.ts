@@ -2,6 +2,7 @@ import fastify from "fastify";
 
 import fastifySwagger from "@fastify/swagger";
 import fastifySwaggerUI from "@fastify/swagger-ui";
+import fastifyCors from "@fastify/cors";
 
 import {
   serializerCompiler,
@@ -17,6 +18,11 @@ import { getEventAttendees } from "./routes/get-event-attendees";
 import { errorHandler } from "./error-handler";
 
 const app = fastify();
+
+app.register(fastifyCors, {
+  origin: "*",
+  methods: ["GET", "POST", "PUT", "DELETE"],
+});
 
 app.register(fastifySwagger, {
   swagger: {
