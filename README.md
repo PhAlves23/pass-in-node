@@ -30,6 +30,60 @@ O sistema fará um scan da credencial do participante para permitir a entrada no
 - [x] O check-in no evento será realizado através de um QRCode;
 
 
+## Como Rodar o Projeto
+
+### Pré-requisitos
+
+Antes de começar, certifique-se de que você tem o [Node.js](https://nodejs.org/en/) (versão 20 ou superior) e o [npm](https://www.npmjs.com/) instalados.
+
+### Passo a Passo
+
+1. **Clonar o Repositório**
+
+    Abra o terminal e execute o seguinte comando para clonar o repositório:
+
+ ```bash
+ git clone https://github.com/seu-usuario/pass-in-node.git
+ ```
+
+2. **Instalar as dependências**
+
+  ```bash
+  npm install
+  ```
+
+3. **Rodar as migrations do banco de dados**
+
+  ```bash
+  npm run db:migrate
+  ```
+
+4. **Rodar o projeto**
+
+  ```bash
+  npm run dev
+  ```
+
+## Outros comandos
+1. **Rodar o prisma studio para visualizar as tabelas**
+
+  ```bash
+  npm run db:studio
+  ```
+
+2. **Buildar o projeto**
+
+  ```bash
+  npm run build
+  ```
+
+3. **Rodar o projeto com build**
+
+  ```bash
+  npm run start
+  ```
+
+
 ## Banco de dados
 
 Nessa aplicação foi utilizado banco de dados relacional (SQL). Para ambiente de desenvolvimento o SQLite pela facilidade do ambiente.
